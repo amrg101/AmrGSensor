@@ -24,6 +24,7 @@ void loop() {
   distanceCm = duration * 0.0340 / 2;
   distanceInch = duration * 0.01330 / 2;
   lcd.setCursor(0, 0);                  //بنحدد الطباعه هتبقا فين على الشاشه
+  lcd.clear();
   lcd.print("Distance: ");
   lcd.print(distanceCm);
   lcd.print(" cm");
@@ -32,5 +33,4 @@ void loop() {
   lcd.print(distanceInch);
   lcd.print(" inch");
   delay(1000);
-  lcd.clear();
 }
