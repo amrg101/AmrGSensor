@@ -1,6 +1,6 @@
 #include <Wire.h>
 #include <LiquidCrystal.h>              //بنعمل استيراد للمكتبات ال هنستخدمها
-LiquidCrystal lcd(0LiquidCrystal lcd(7, 8, 9, 10, 11, 12);x27, 16,2);   //بنحدد هنربط الشاشه فين ف الاردوينو
+LiquidCrystal lcd(7, 8, 9, 10, 11, 12);   //بنحدد هنربط الشاشه فين ف الاردوينو
 const int trigPin = 3;
 const int echoPin = 2;                    
 long duration;
