@@ -1,15 +1,12 @@
 #include <Wire.h>
 #include <LiquidCrystal.h>              
-LiquidCrystal lcd(2, 3, 4, 5, 6, 7);    //LCD object Parameters: (rs, enable, d4, d5, d6, d7)
+LiquidCrystal lcd = LiquidCrystal(2, 3, 4, 5, 6, 7);    //LCD object Parameters: (rs, enable, d4, d5, d6, d7)
 const int trigPin = 12;
 const int echoPin = 11;                    
 long duration;
 int distanceCm, distanceInch;            
 void setup() {
-  lcd.init();
-  lcd.begin(16, 2);                      // Initializes the interface to the LCD display
-  lcd.clear();
-  lcd.backlight();                       
+  lcd.begin(16, 2);                      // Initializes the interface to the LCD display                       
   pinMode(trigPin, OUTPUT);              
   pinMode(echoPin, INPUT);
   Serial.begin(9600);                  
